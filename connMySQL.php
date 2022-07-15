@@ -7,7 +7,7 @@ $db_name = 'Project';
 
 $db_link = mysqli_connect($db_host, $db_userName, $db_password, $db_name);
 if (!$db_link) {
-    die('資料庫連結失敗!');
+    die('資料庫連結失敗！');
 } else {
    echo '資料庫連結成功';
 }
