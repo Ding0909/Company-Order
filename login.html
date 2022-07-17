@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>訂餐系統</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>登入</title>
 </head>
-<body>
-    <form action="login.php" method="post">
-        帳號：<input type="text" name="account" value="">
-        密碼：<input type="text" name="password" value="">
-    </form>
-</body>
+    <body>
+        <form class="login" action="login.js" method="post">
+            <div class="container">
+                <fieldset>
+                        <h1 class="lgd">登入帳號</h1>
+                        <p>直接輸入您的帳號密碼登入</p>
+                        <input type="username" id="username" class="username_email" name="username" placeholder="帳號" required>
+                        <input type="password" id="password" class="password1" name="password" placeholder="密碼" required>
+                        <input type="button" value="登入" class="btn" id="submit" onclick="myFormCheck()"/>
+                        <div id="sign">
+                            <a href="" id="member_btn">忘記密碼?</a>
+                            <a href="" id="register">註冊</a>
+                        </div>
+                </fieldset>
+            </div>
+        </form>
+    </body>
 </html>
+
+
+
+
